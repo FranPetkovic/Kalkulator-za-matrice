@@ -17,13 +17,16 @@
 body{
     background-color: white;
     overflow: hidden;
-
 }
 main{
     margin: 0 auto;
     max-width: 1600px;
     min-height: 100vh;
     position: relative;
+}
+a{
+    text-decoration: none;
+    color: #000;
 }
 .header{
     display: flex;
@@ -144,3 +147,36 @@ img{
    60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
    80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
 }
+button:active{
+    transform: scale(1.02) rotate(-5deg) translateX(-50%);
+    ;
+}
+@media (max-width: 725px) {
+    .shape-blob,.shape-blob2,.shape-blob3,.slika{
+        display: none;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .header-ostalo{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    h1{
+        width: 300px;
+        top: 15%;
+    }
+    h2{
+        top: 55%;
+        left: 30%;
+    }
+    button{
+        top: 60%;
+        left: 55%;
+    }
+    .info{
+        top: 80%;
+        left: 10%;
+        border-width:0px ;
+    }
+  }

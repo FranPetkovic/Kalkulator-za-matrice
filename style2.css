@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+:root{
+    --crna:#000;
+    --plava:#38dbff;
+    --naran:#ffb443;
+    --crvena:#ff5d5d;
+    --zuta:#fff503;
+    --zelena:#00ff75;
+    --ljub:#dd7dff;
+}
+
+body{
+    overflow: hidden;
+}
+main{
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 100vh;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo{
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    font-size: 36px;
+}
+.header-ostalo{
+    display: flex;
+    gap: 45px;
+    font-size: 24px;
+}
+img{
+    width: 250px;
+    height: 400px;
+    transform: translateY(-10%) rotate(5deg);
+}
+.matrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pomocni1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.matrica{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+.matrica2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px 50px;
+}
+.matrica2 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 90px;
+    height: 90px;
+    background-color: var(--zuta);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px 0px #000000;
+    font-size: 36px;
+    text-align: center;
+    border: black 3px solid;
+}
+.input2{
+    width: 125px;
+    height: 125px;
+    background-color: var(--zuta);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px 0px #000000;
+    font-size: 36px;
+    text-align: center;
+    border: black 3px solid;
+}
+.gumbi{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px;
+}
+.gumbi1{
+    background-color: var(--ljub);
+    width: 175px;
+    font-size: 200px;
+    font-size: 26px;
+    padding: 2px;
+    box-shadow: 5px 5px 0px 0px #000000;
+}
+.gumbi2{
+    background-color: var(--zelena);
+    width: 200px;
+    font-size: 200px;
+    font-size: 32px;
+    padding: 2px;
+    box-shadow: 5px 5px 0px 0px #000000;
+}
+.marginBot{
+    margin-bottom: 20px;
+}
+.pomoc2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shape-blob {
+	background:#F6F6F6;
+	height: 250px;
+	width: 250px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: transform 20s ease-in-out infinite both alternate;
+	opacity:1;
+	position: absolute;
+	left: 38%;
+	top: 43%;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+.strelica{
+    position: absolute;
+    left: 30%;
+}
+.shape-blob2 {
+	height: 1250px;
+	width: 1650px;
+	border-radius: 30% 50% 20% 40%;
+    animation: transform 20s ease-in-out infinite both alternate;
+    border: #000 3px solid;
+	opacity:1;
+	position: absolute;
+	left:-20%;
+	top: 30%;
+    overflow: hidden;
+}
+button:active{
+    transform: scale(1.02);
+}
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+@media (max-width: 725px) {
+    body{
+        overflow: auto;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .header-ostalo{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    svg{
+        display: none;
+    }
+    .shape-blob,.shape-blob2{
+        display: none;
+    }
+    .pomocni1{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+:root{
+    --crna:#000;
+    --plava:#38dbff;
+    --naran:#ffb443;
+    --crvena:#ff5d5d;
+    --zuta:#fff503;
+    --zelena:#00ff75;
+    --ljub:#dd7dff;
+}
+body{
+    background-color: white;
+}
+main{
+    margin: 0 auto;
+    max-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.header{
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+
+.logo{
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    font-size: 36px;
+}
+.header-ostalo{
+    display: flex;
+    gap: 45px;
+    font-size: 24px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid div{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    padding: 100px;
+    position: relative;
+}
+.grid>:nth-child(1){
+    grid-column: span 2;
+    background-color: var(--naran);
+    height: 300px;
+}
+.grid>:nth-child(1) svg{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 500px;
+}
+
+.grid>:nth-child(2){
+    grid-column: span 2;
+    background-color: #000;
+}
+.grid>:nth-child(2) svg{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.grid>:nth-child(2) h2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid>:nth-child(3) p{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid>:nth-child(4){
+    background-color: var(--ljub);
+}
+.grid>:nth-child(4) svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.grid>:nth-child(4) h2{
+    z-index: 2;
+}
+.grid>:nth-child(5) svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.grid>:nth-child(4) h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid>:nth-child(5) h2{
+    z-index: 2;
+}
+.grid>:nth-child(5) h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid>:nth-child(5){
+    background-color: var(--naran);
+}
+
+.grid>:nth-child(6) p{
+   line-height: 40px;
+}
+.grid>:nth-child(6) p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid>:nth-child(6) span{
+    font-size: 50px;
+}
+.grid>:nth-child(6) sub{
+    font-size:25px;
+}
+.grid>:nth-child(7){
+    background-color: var(--zelena);
+    grid-column: span 2;
+    height: 300px;
+}
+.bolob2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+h1{
+    font-size: 120px;
+    color: black;
+    width: 200px;
+}
+.h12{
+    width: 1000px;
+}
+h2{
+    font-size: 50px;
+    color: black;
+}
+p{
+    font-size: 32px;
+}
+.drugiP{
+    transform: translateX(4.35%);
+}
+.blob{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.crta{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+.crta3{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 500px;
+}
+@media (max-width: 725px) {
+    .shape-blob,.shape-blob2,.shape-blob3,.slika{
+        display: none;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .header-ostalo{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    svg{
+        display: none;
+    }
+    .grid div{
+        grid-column: span 2;
+    }
+    h1{
+        font-size: 65px;
+        color: black;
+    }
+    h2{
+        font-size: 30px;
+        color: black;
+    }
+    p{
+        font-size: 24px;
+    }
+
+    img{
+        width: 300px;
+    }
+    .grid>:nth-child(1) p{
+        width: 200px;
+    }
+    .pomoc23 p{
+        font-size:20px !important; ;
+    }
+  }
