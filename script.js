@@ -207,15 +207,15 @@ function de(m)
         }
         else{
             let c=1/determinantaA;
-            treca1.innerText=matricaX[0]*c
-            treca2.innerText=matricaX[1]*c
-            treca3.innerText=matricaX[2]*c
-            treca4.innerText=matricaX[3]*c
-            treca5.innerText=matricaX[4]*c
-            treca6.innerText=matricaX[5]*c
-            treca7.innerText=matricaX[6]*c
-            treca8.innerText=matricaX[7]*c
-            treca9.innerText=matricaX[8]*c
+            treca1.innerText=(matricaX[0]*c).toFixed(3)
+            treca2.innerText=(matricaX[1]*c).toFixed(3)
+            treca3.innerText=(matricaX[2]*c).toFixed(3)
+            treca4.innerText=(matricaX[3]*c).toFixed(3)
+            treca5.innerText=(matricaX[4]*c).toFixed(3)
+            treca6.innerText=(matricaX[5]*c).toFixed(3)
+            treca7.innerText=(matricaX[6]*c).toFixed(3)
+            treca8.innerText=(matricaX[7]*c).toFixed(3)
+            treca9.innerText=(matricaX[8]*c).toFixed(3)
         }
     });
 
@@ -283,14 +283,14 @@ function de(m)
         }
         else{
             let c=1/determinantaA;
-            treca1.innerText=matricaX[0]*c
-            treca2.innerText=matricaX[1]*c
-            treca3.innerText=matricaX[2]*c
-            treca4.innerText=matricaX[3]*c
-            treca5.innerText=matricaX[4]*c
-            treca6.innerText=matricaX[5]*c
-            treca7.innerText=matricaX[6]*c
-            treca8.innerText=matricaX[7]*c
-            treca9.innerText=matricaX[8]*c
+            treca1.innerText=(matricaX[0]*c).toFixed(3)
+            treca2.innerText=(matricaX[1]*c).toFixed(3)
+            treca3.innerText=(matricaX[2]*c).toFixed(3)
+            treca4.innerText=(matricaX[3]*c).toFixed(3)
+            treca5.innerText=(matricaX[4]*c).toFixed(3)
+            treca6.innerText=(matricaX[5]*c).toFixed(3)
+            treca7.innerText=(matricaX[6]*c).toFixed(3)
+            treca8.innerText=(matricaX[7]*c).toFixed(3)
+            treca9.innerText=(matricaX[8]*c).toFixed(3)
         }
     });
